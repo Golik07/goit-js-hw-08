@@ -26,15 +26,13 @@ fatherImages.insertAdjacentHTML('afterbegin', imgMarkUp);
 fatherImages.addEventListener('click', openImgs);
 
 function openImgs(event) {
-  event.preventDefault();
-
   if (event.target.nodeName !== 'IMG') {
     return;
   }
-
-  const lightbox = new SimpleLightbox('.gallery a', {
-    captionsData: 'alt',
-    captionPosition: 'bottom',
-    captionDelay: 250,
-  });
 }
+
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionPosition: 'bottom',
+  captionDelay: 250,
+});
