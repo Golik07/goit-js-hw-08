@@ -36,8 +36,8 @@ function formSubmit(e) {
     message: textarea.value,
   };
 
-  if ({ email } === '' || { message } === '') {
-    return alert('Нужно все поля заполнить');
+  if (text.value === '' || textarea.value === '') {
+    return alert('Нужно заполнить все поля');
   }
   console.log(formData);
   clearFormData();

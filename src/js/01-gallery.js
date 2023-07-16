@@ -23,14 +23,6 @@ function onImagesCards(imgs) {
 }
 fatherImages.insertAdjacentHTML('afterbegin', imgMarkUp);
 
-fatherImages.addEventListener('click', openImgs);
-
-function openImgs(event) {
-  if (event.target.nodeName !== 'IMG') {
-    return;
-  }
-}
-
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionPosition: 'bottom',
